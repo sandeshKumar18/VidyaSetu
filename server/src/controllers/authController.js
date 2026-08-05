@@ -34,7 +34,6 @@ async function register(req, res) {
       name,
       email,
       password,
-      // Default avatar and role (defaults to 'user')
       avatar: { type: 'preset', presetOption: 'avatar1', color: '#3b82f6' }
     });
 

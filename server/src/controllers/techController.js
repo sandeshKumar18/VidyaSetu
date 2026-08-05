@@ -38,7 +38,7 @@ const extractJSON = (text) => {
     try {
         return JSON.parse(clean);
     } catch (e) {
-        // If that fails, it has extra text. Let's hunt for the JSON structure.
+      
     }
 
     // 3. Regex Hunt: Find the first '[' and last ']' (for Arrays)

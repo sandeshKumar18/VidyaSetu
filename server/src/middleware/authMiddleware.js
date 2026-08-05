@@ -32,7 +32,7 @@ const protect = async (req, res, next) => {
   }
 };
 
-// 2. 🔥 NEW: Authorize: Checks if user has specific role (e.g., 'admin')
+// 2. NEW: Authorize: Checks if user has specific role (e.g., 'admin')
 const authorize = (...roles) => {
   return (req, res, next) => {
     if (!req.user) {

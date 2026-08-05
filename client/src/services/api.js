@@ -26,8 +26,6 @@ api.interceptors.request.use(
 api.interceptors.response.use(
   (response) => response,
   (error) => {
-    // 1. Check for "Skip Redirect" flag
-    // If the request config has _skipAuthRedirect: true, we do NOT auto-redirect.
     if (error.config && error.config._skipAuthRedirect) {
       return Promise.reject(error);
     }
