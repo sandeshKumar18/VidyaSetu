@@ -3,7 +3,7 @@ import { useNavigate, useSearchParams } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Search, ChevronRight, ChevronDown, X, Layers, LayoutGrid, ArrowRight, Code2 } from 'lucide-react';
 import * as LucideIcons from 'lucide-react'; 
-import api from '../services/api';
+import api from '../services/api.js';
 import { DOMAINS, FIELDS } from '../data/fieldsData.jsx'; 
 
 const Technologies = () => {

@@ -19,7 +19,7 @@ router.get('/:slug', getTechnologyBySlug);
 // User Protected Routes (Must be logged in to track progress)
 router.put('/:slug/progress', protect, updateProgress);
 
-// 🔥 ADMIN ONLY ROUTE
+// ADMIN ONLY ROUTE
 // 1. protect: Must be logged in
 // 2. authorize('admin'): Must have role="admin"
 router.post('/', protect, authorize('admin'), createTechnology);

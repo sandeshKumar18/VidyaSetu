@@ -21,7 +21,7 @@ connectDB();
 
 const app = express();
 
-// ✅ Trust Render's proxy so express-rate-limit can use X-Forwarded-For safely
+// Trust Render's proxy so express-rate-limit can use X-Forwarded-For safely
 app.set('trust proxy', 1);
 
 // Security middleware
@@ -73,7 +73,7 @@ app.use('*', (req, res) => {
 // Error handling middleware
 app.use(errorHandler);
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT;
 
 const server = app.listen(PORT, () => {
   console.log(`Server running in ${process.env.NODE_ENV} mode on port ${PORT}`);
