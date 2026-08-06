@@ -140,7 +140,7 @@ const Profile = () => {
                   </div>
                 </div>
                 <h2 className="text-3xl font-bold text-th-primary mb-1 tracking-tight">{profile.name}</h2>
-                <div className="flex items-center gap-2 text-th-muted text-sm font-mono mb-6"><Mail className="w-3 h-3" /> {profile.email}</div>
+                <div className="flex items-center gap-2 text-th-muted text-sm font-mono mb-6"><Mail className="w-3 h-3" />{profile.email}</div>
                 <div className="flex flex-wrap justify-center gap-2 mb-8">
                   <span className={`px-3 py-1 rounded-lg border text-xs font-bold uppercase tracking-wide ${
                     profile.experienceLevel === 'Beginner' ? 'bg-emerald-500/10 border-emerald-500/20 text-emerald-400' :
